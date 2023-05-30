@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>MPG predictor</title>
+        <link rel="stylesheet" href="/static/style.css">
+    </head>
+
+    <body>
+        <div class="page">
+            <h1>Car Efficiency Predictor</h1>
+    
+            <div class="form-container">
+                <form action="/predict" method="POST">
+                    <label for="displacement">Displacement:</label>
+                    <input type="text" id="displacement" name="displacement" required>
+            
+                    <label for="cylinders">Cylinders:</label>
+                    <input type="text" id="cylinders" name="cylinders" required>
+            
+                    <label for="horsepower">Horsepower:</label>
+                    <input type="text" id="horsepower" name="horsepower" required>
+            
+                    <label for="weight">Weight:</label>
+                    <input type="text" id="weight" name="weight" required>
+            
+                    <label for="acceleration">Acceleration:</label>
+                    <input type="text" id="acceleration" name="acceleration" required>
+            
+                    <button type="submit">Predict</button>
+                </form>
+            </div>
+        </div>
+
+    </body>
+</html>
