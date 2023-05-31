@@ -5,16 +5,18 @@
     <link rel="stylesheet" href="/static/style.css">
 </head>
 <body>
-    <h1>Prediction Results</h1>
-    
-    <div class ="page">
-        {% if efficient_car %}
-            <p>The car is predicted to be efficient.</p>
-        {% else %}
-            <p>The car is predicted to be inefficient.</p>
-        {% endif %}
+    <div class="page">
+        <h1>Prediction Results</h1>
         
-        <a href="/">Go Back</a>
+        <div class ="output">
+            {% if efficient_car %}
+                <p>The car is predicted to be efficient.</p>
+            {% else %}
+                <p>The car is predicted to be inefficient.</p>
+            {% endif %}
+            
+            <a href="/">Go Back</a>
+        </div>
     </div>
 
 </body>
