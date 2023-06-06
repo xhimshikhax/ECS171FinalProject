@@ -17,8 +17,9 @@ def predict():
     horsepower = float(request.form["horsepower"])
     weight = float(request.form["weight"])
     acceleration = float(request.form["acceleration"])
+    modelyear = float(request.form["model year"])
 
-    car_data = [cylinders, displacement, horsepower, weight, acceleration] # input to your model
+    car_data = [cylinders, displacement, horsepower, weight, acceleration, modelyear] # input to your model
     prediction = predict_efficiency(clf, car_data)
 
     # Your model predicts 1 for efficient and 0 for not efficient
